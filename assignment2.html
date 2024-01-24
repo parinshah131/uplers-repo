@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 50px;
+            box-sizing: border-box;
+            margin: 0 50px;
+        }
+
+        .row {
+            display: flex;
+            flex: 1;
+            margin-bottom: 50px;
+        }
+
+        .cell {
+            flex: 1;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .tooltiptext {
+            display: none;
+            position: absolute;
+            top: -20px;
+            right: -40px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip:hover .tooltiptext {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="cell">
+                <div class="tooltip">Datasetid<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">recordid<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">fields<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <div class="tooltip">euro-exchange-rates<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">43f5940bfd6881b2f8e0c434a3a96f229a8a1054<span class="tooltiptext">Some
+                        tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">{
+                    "date":"2022-03-06",
+                    "currency":"USD",
+                    "rate":1.0929
+                    }<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <div class="tooltip">euro-exchange-rates<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">1787f87bcf029a223e001d6f88750fe0ca6772d1<span class="tooltiptext">Some
+                        tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">{
+                    "date":"2022-03-06",
+                    "currency":"AUD",
+                    "rate":1.4872
+                    }<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <div class="tooltip">euro-exchange-rates<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">756f0f685431156ad1d3bc24b91d574c5a6f00fa<span class="tooltiptext">Some
+                        tooltip</span></div>
+            </div>
+            <div class="cell">
+                <div class="tooltip">{
+                    "date":"2022-03-06",
+                    "currency":"CAD",
+                    "rate":1.3937
+                }<span class="tooltiptext">Some tooltip</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
